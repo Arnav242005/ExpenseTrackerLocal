@@ -42,29 +42,39 @@ function Component() {
   });
 };
 
- const outer = {
-  width:"100%",
-  height:"100vh",
-  display:"flex",
-  flexDirection:"column",
-  justifyContent:"center",
-  alignItems:"center"
-}
-
-const inner = {
-  backgroundColor:"orange",
-  padding:"50px",
-  width:"22%",
-  boxSizing:"border-box"
-}
+const outer = {
+  width: "100%",
+  minHeight: "100vh",
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  backgroundColor: "#f5f5f5",
+  padding: "40px 0",
+  boxSizing: "border-box"
+};
 
 const cards = {
-  display:"flex",
-  flexDirection:"row",
-  gap:"50px",
-  padding:"10px",
-  flexWrap:"wrap"
-}
+  display: "flex",
+  flexWrap: "wrap",
+  gap: "30px",
+  justifyContent: "center",
+  padding: "20px",
+  width: "100%",
+  maxWidth: "1200px"
+};
+
+const inner = {
+  backgroundColor: "#fff",
+  padding: "25px",
+  borderRadius: "12px",
+  boxShadow: "0 4px 12px rgba(0, 0, 0, 0.15)",
+  width: "250px",
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "flex-start",
+  transition: "transform 0.2s ease"
+};
+
 
 const deleteExpense = (indexToDelete) => {
   setExpenses((prev) => prev.filter((_,i) => i !== indexToDelete));
