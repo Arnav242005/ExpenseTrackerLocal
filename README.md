@@ -1,70 +1,103 @@
-# Getting Started with Create React App
+# 💸 Expense Tracker (React App)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple and user-friendly Expense Tracker built with **React**. This app allows users to **add**, **update**, and **delete** expenses with details like amount, purpose, and date. The project uses **React Hooks**, **React Hook Form**, and **inline CSS styling** for a clean, interactive experience.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+- ✅ Add new expenses with details and amount
+- ✏️ Edit existing expenses
+- ❌ Delete expenses
+- 📅 Auto-generates the current date on entry and update
+- 🧠 Managed using `useState` and `useEffect`
+- 🎯 Form handling via `react-hook-form`
+- 🧼 Fully styled with inline CSS (no external CSS files)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Technologies Used
 
-### `npm test`
+- **React** (Functional Components & Hooks)
+- **React Hook Form** (for form management)
+- **Font Awesome** (for icons)
+- **JavaScript ES6**
+- **Inline CSS**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 📂 Project Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+/src
+┣ 📄 Component.jsx # Main component with expense state & handlers
+┣ 📄 Inputs.jsx # Form to add a new expense
+┣ 📄 UpdateExpense.jsx # Form to edit an existing expense
+┣ 📄 index.js / App.js # Root render files
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🧠 How It Works
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Add Expense
+- Fill in the form for **details** and **amount**.
+- On submit, a new expense is created with an auto-generated ID and today's date.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Update Expense
+- Click the ✏️ icon next to an expense to edit it.
+- Submit the updated details and it replaces the previous entry.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Delete Expense
+- Click the **Delete** button to remove any entry from the list.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 🖥️ Screenshots
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+| Add Form | Expense Cards | Update Form |
+|----------|----------------|-------------|
+| ![Add Form](https://via.placeholder.com/200x100?text=Add+Form) | ![Cards](https://via.placeholder.com/200x100?text=Cards) | ![Update Form](https://via.placeholder.com/200x100?text=Update+Form) |
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## ⚙️ Installation & Run Locally
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+# 1. Clone the repository
+git clone https://github.com/yourusername/expense-tracker-react.git
 
-### Analyzing the Bundle Size
+# 2. Navigate to the project directory
+cd expense-tracker-react
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+# 3. Install dependencies
+npm install
 
-### Making a Progressive Web App
+# 4. Start the app
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+App runs locally on http://localhost:3000
 
-### Advanced Configuration
+📌 Future Improvements
+Add persistent storage (LocalStorage / Firebase / Backend)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Filter expenses by date or category
 
-### Deployment
+Add user authentication
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Add charts for expense analysis
 
-### `npm run build` fails to minify
+🙌 Acknowledgements
+React
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+React Hook Form
+
+Font Awesome
+
+📃 License
+This project is open-source and free to use under the MIT License.
+
+👨‍💻 Author
+Arnav Jadhav
+Bachelor of Science in Information Technology
+GitHub • LinkedIn
+
